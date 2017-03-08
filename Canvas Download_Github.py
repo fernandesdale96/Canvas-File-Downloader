@@ -31,12 +31,12 @@ pwd_field = "pseudonym_session_password"
 uname_credentials = "aname"
 passw_credentials = "apass"
 
-#Path to the downloaded chrome driver. PLease add the path to your chrome driver for script to work . Ensure 'r' is added before path for script to work 
+#Path to the downloaded chrome driver. Please add the path to your chrome driver for script to work . Ensure 'r' is added before path for script to work 
 chrome_path = r"path/to/chrome/webdriver"
 
-#Changing Chrome Driver default directory 
-chrome_option =webdriver.ChromeOptions()
 
+chrome_option =webdriver.ChromeOptions()
+#Changing Chrome Driver default download directory 
 #If you wish to change download directory, change the second parameter of following line. Ensure 'r' is added before path for script to work
 prefs = prefs = {"download.default_directory" : r"path/to/desired/download/directory"}
 chrome_option.add_experimental_option("prefs",prefs)
@@ -61,7 +61,7 @@ def navigate(url):
     r = driver.page_source
     return r
 
-#Download module, searches for every relavent link and downloads the files
+#Download module, searches for every relevant link and downloads the files
 def download(source):
     soup = BeautifulSoup(source,"lxml")
     for link in soup.find_all('a',class_='ef-name-col__link'):
