@@ -9,6 +9,8 @@ Canvas relies heavily on Javascript therefore Selenium had to be used instead of
 Usage: 
 
 Step 1: Simply download the Python script, replace the necessary parameters (I have mentioned necessary changes to be made as comments in the script)
+
 Step 2: Run it on iPython or your desired Python Shell
+
 Step 3: Enjoy not having to manually browse and download each and every course file
 
