@@ -2,7 +2,7 @@
 
 This is a simple Python based web scraper
 
-I have used Selenium and BeautifulSoup4 to pull the desired files off Canvas. As of now it works with only 1 module since different courses on the website have different layouts. Before using the scraper be sure to make necessary changes to the script.
+I have used Selenium and BeautifulSoup4 to pull the desired files off Canvas. As of now it works with 2 of the 3 different layouts of courses on Canvas. Before using the scraper be sure to make necessary changes to the script.
 
 Canvas relies heavily on Javascript therefore Selenium had to be used instead of conventional tools such as Scrapy. Also with the Authentication Tokens and Cookies being used by the Website, I had to fake being a real user. This can only be achieved by using Selenium. I have used BeautifulSoup4 just to trim down the page source and get the necessary download links.
 
